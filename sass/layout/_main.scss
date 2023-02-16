@@ -1,7 +1,8 @@
 @use "../modules" as *;
 
-.carosel {
+.sliding {
     color: $colour-white;
+    overflow: hidden;
     h2 {
         font-size: px(80);
         line-height: px(60);
@@ -10,9 +11,60 @@
         font-size: px(45);
         font-weight: 300;
     }
+
     &__container {
         display: flex;
-        // overflow-x: visible;
+        overflow-x: visible;
+        transform: translateX(0);
+        transition: transform 1.5s ease-in-out;
+    }
+
+    &__section {
+        width: 100%;
+        flex: none;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 640px;
+            object-fit: cover;
+        }
+    }
+    &__content1,
+    &__content2,
+    &__content3 {
+        position: absolute;
+    }
+    &__content1 {
+        top: 30%;
+        right: 20%;
+    }
+    &__content2,
+    &__content3 {
+        top: 55%;
+        left: 25%;
+    }
+    &__buttons {
+        margin-top: px(20);
+        display: flex;
+        gap: px(10);
+    }
+}
+
+.carosel {
+    overflow: hidden;
+    color: $colour-white;
+    h2 {
+        font-size: px(75);
+        line-height: px(60);
+    }
+    h3 {
+        font-size: px(45);
+        font-weight: 300;
+    }
+    &__container {
+        display: flex;
+        overflow-x: visible;
         transform: translateX(0);
         transition: transform 1.5s ease-in-out;
     }
@@ -215,13 +267,25 @@
     margin: 0;
 }
 
-// .playVideo {
-//     display: grid;
-//     margin-inline: auto;
-//     align-items: start;
-//     grid-template-columns: 1fr 1fr;
-
-//     grid-template-rows: auto auto;
-//     justify-items: center;
-//     width: min(100%, px(1140));
-// }
+.vid {
+    video {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+    &__grid {
+        display: grid;
+        margin-inline: auto;
+        align-items: start;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        width: min(100%, px(1140));
+    }
+    &__controls {
+        display: flex;
+        img {
+            width: px(20);
+        }
+    }
+}

@@ -45,11 +45,11 @@
             </nav>
         </header>
         <main>
-            <section class="carosel">
-                <div class="carosel__container">
-                    <div class="carosel__section">
-                        <img src="images/carosel01.jpg" alt="header img" />
-                        <div class="carosel__content1">
+            <section class="sliding">
+                <div class="sliding__container">
+                    <div class="sliding__section">
+                        <img src="./images/carosel01.jpg" alt="header img" />
+                        <div class="sliding__content1">
                             <h2>EVERYONE <br />DESERVES <br />A CHANCE</h2>
                             <h3>to play & be happy</h3>
                             <div class="carosel__buttons">
@@ -64,8 +64,8 @@
                         </div>
                     </div>
 
-                    <div class="carosel__section">
-                        <img src="images/carosel02.jpg" alt="header img" />
+                    <div class="sliding__section">
+                        <img src="./images/carosel02.jpg" alt="header img" />
                         <div class="carosel__content2">
                             <h2>BASKETBALL <br />IS A TEAM SPORT</h2>
                             <h3>leave the bullying off the court</h3>
@@ -81,8 +81,8 @@
                         </div>
                     </div>
 
-                    <div class="carosel__section">
-                        <img src="images/carosel03.jpg" alt="header img" />
+                    <div class="sliding__section">
+                        <img src="./images/carosel03.jpg" alt="header img" />
                         <div class="carosel__content3">
                             <h2>BASKETBALL IS A <br />GAME FOR EVERYONE</h2>
                             <h3>regardless of race and gender</h3>
@@ -96,6 +96,7 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                     </div>
                 </div>
             </section>
@@ -211,13 +212,13 @@
             </section>
 
             <!-- Video Content -->
-            <section class="playVideo">
-                <section class="playVid green">
+            <section class="vid">
+                <section class="vid__grid green">
                     <div id="video" class="video-control">
                         <video src="videos/house.mp4" controls></video>
                     </div>
-
-                    <div id="controls">
+                    <div>
+                    <div class="vid__controls green">
                         <div id="play">
                             <img src="images/video-play.svg" alt="play icon" />
                         </div>
@@ -238,6 +239,7 @@
                                 src="images/video-volume.svg"
                                 alt="volume icon"
                             />
+                        </div>
                         </div>
 
                         <div id="volumeControl">
@@ -385,6 +387,7 @@
             </footer>
         </footer>
         <script src="js/video.js"></script>
+        <script src="js/components/TheSlider.js" type="module" defer></script>
         <script src="js/main.js" type="module" defer></script>
     </body>
 </html>
