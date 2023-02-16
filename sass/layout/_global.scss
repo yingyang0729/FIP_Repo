@@ -1,0 +1,100 @@
+@use "../modules" as *;
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    font-size: px(20);
+    color: white !important;
+    font-weight: 500;
+    cursor: pointer;
+    border: 0;
+    background-color: $colour1;
+    padding: px(10) px(30);
+    border-radius: px(5);
+    transition: background-color 0.5s ease-in-out;
+    // transition: color 300ms ease-in-out;
+}
+
+.btn:hover {
+    background-color: $colour2;
+}
+
+.btn2 {
+    font-size: px(20);
+    color: $colour1 !important;
+    font-weight: 500;
+    cursor: pointer;
+    border: 0;
+    background-color: $colour-white;
+    padding: px(10) px(30);
+    border-radius: px(5);
+    transition: background-color 0.5s ease-in-out;
+    // transition: color 300ms ease-in-out;
+}
+
+.selected {
+    box-shadow: 0 8px 15px 0 rgba($colour1, 0.2);
+    background-color: $colour1;
+    color: $colour-white;
+}
+
+.white {
+    background-color: $colour-whitegray;
+}
+.gray {
+    background-color: $colour-whitegray;
+}
+.headline {
+    &__grid {
+        display: grid;
+        margin-inline: auto;
+        align-items: end;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        width: min(100%, px(1140));
+        // background-color: aqua;
+        p {
+            color: $colour3;
+            font-weight: 500;
+            font-size: px(20);
+            padding-top: px(45);
+        }
+        h2 {
+            color: $colour1;
+            font-size: px(30);
+            padding-bottom: px(45);
+        }
+        h2::after {
+            background: $colour1;
+            content: "";
+            display: block;
+            width: px(50);
+            height: px(3);
+            bottom: px(-25);
+            background: $colour3;
+        }
+    }
+}
+
+.mission-btn {
+    font-size: px(15);
+    color: $colour-white !important;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: $colour1;
+    padding: px(10) px(30);
+    border-radius: px(5);
+    transition: background-color 0.5s ease-in-out;
+    border: none;
+}
+
+.mission-btn:hover {
+    background-color: $colour3;
+}
+
+.selected {
+    background-color: $colour3;
+}

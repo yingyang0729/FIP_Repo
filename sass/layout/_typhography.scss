@@ -1,0 +1,51 @@
+@use "../modules" as *;
+// "regular": 400,
+// "medium": 600,
+// "bold": 700,
+// "black": 900,
+
+// header
+.header {
+    font-weight: weight(medium);
+    font-size: px(14);
+    a {
+        color: $colour-darkest;
+    }
+}
+#sidenav {
+    a {
+        font-size: px(16);
+    }
+}
+
+//body
+main {
+    color: $colour-darkest;
+    h1 {
+        font-size: px(50);
+        line-height: px(55);
+        @include breakpoint(desktop) {
+            font-size: px(60);
+            line-height: px(55);
+        }
+    }
+}
+
+//footer
+footer {
+    padding-top: px(25);
+    @include breakpoint(tablet) {
+        padding-top: px(35);
+    }
+    h3 {
+        font-size: px(14);
+        text-transform: uppercase;
+        font-weight: weight(medium);
+        color: $colour-white;
+    }
+    a,
+    p {
+        font-size: px(13);
+        color: $colour-footerfont;
+    }
+}

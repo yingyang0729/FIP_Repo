@@ -1,0 +1,82 @@
+@use "../modules" as *;
+
+.carosel {
+    color: $colour-white;
+    h2 {
+        font-size: px(80);
+        line-height: px(60);
+    }
+    h3 {
+        font-size: px(45);
+        font-weight: 300;
+    }
+    &__container {
+        display: flex;
+        // overflow-x: visible;
+        transform: translateX(0);
+        transition: transform 1.5s ease-in-out;
+    }
+    &__section {
+        width: 100%;
+        flex: none;
+        position: relative;
+        img {
+            width: 100%;
+            height: 640px;
+
+            object-fit: cover;
+        }
+    }
+
+    &__content1,
+    &__content2,
+    &__content3 {
+        position: absolute;
+    }
+    &__content1 {
+        top: 30%;
+        right: 10%;
+    }
+    &__content2,
+    &__content3 {
+        top: 55%;
+        left: 25%;
+    }
+    &__buttons {
+        margin-top: px(20);
+        display: flex;
+        gap: px(10);
+    }
+}
+
+.mission {
+    background-color: $colour-whitegray;
+    &__grid {
+        display: grid;
+        margin-inline: auto;
+        align-items: start;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        width: min(100%, px(1140));
+    }
+    &__main {
+        margin-left: px(20);
+        p {
+            margin: px(20);
+            color: $colour1;
+            font-size: px(18);
+            font-weight: 400;
+            span {
+                font-weight: 500;
+                font-size: px(20);
+                color: $colour3;
+            }
+        }
+        h3 {
+            font-size: px(30);
+            line-height: px(30);
+            color: $colour1;
+        }
+    }
+}

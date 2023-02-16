@@ -1,0 +1,73 @@
+@use "../modules" as *;
+
+.sql {
+    margin-top: px(50);
+    @include grid(normal, start);
+
+    .intro__buttons {
+        button {
+            padding: px(22) 0;
+        }
+
+        @include grid(normal, start);
+        grid-template-columns: 1fr 1fr;
+        width: min(100%, px(1000));
+        gap: px(8);
+        @include breakpoint(tablet) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    &__img {
+        img {
+            box-shadow: px(-10) px(-10) $colour1;
+
+            margin-left: px(10);
+            height: px(420);
+            width: 100%;
+            object-fit: cover;
+            @include breakpoint(desktop) {
+                width: 85%;
+            }
+        }
+    }
+    &__info {
+        margin-top: px(40);
+        @include grid(normal, start);
+        gap: px(20);
+        width: min(100%, px(1000));
+        @include breakpoint(tablet) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        h3 {
+            margin-top: px(20);
+            font-weight: weight(medium);
+            line-height: 30px;
+            font-size: px(25);
+            margin-bottom: px(20);
+        }
+        p {
+            font-weight: weight(medium);
+            // display: inline-block;
+
+            font-size: px(13);
+            // font-weight: weight(regular);
+            margin-bottom: px(15);
+        }
+        button {
+            margin-top: px(20);
+        }
+    }
+    &__appoved {
+        display: flex;
+        align-items: flex-start;
+        img {
+            margin-right: px(10);
+            width: px(26);
+        }
+    }
+    span {
+        color: $colour1;
+        font-weight: weight(bold);
+    }
+}

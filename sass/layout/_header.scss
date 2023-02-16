@@ -1,0 +1,88 @@
+@use "../modules" as *;
+
+.header {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    background-image: url("/images/header-court.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: px(270);
+    object-fit: cover;
+    background-position: center;
+    img {
+        width: 100%;
+    }
+
+    &__logo {
+        img {
+            width: px(284);
+            // margin: px(40) 0;
+        }
+    }
+    &__contact {
+        display: flex;
+        gap: px(20);
+        i {
+            font-size: px(25);
+            padding: px(10) px(10);
+            color: white;
+            background-color: $colour1;
+        }
+        i:hover {
+            background-color: $colour3;
+            @include transitionEase;
+        }
+    }
+    &__mail,
+    &__phone {
+        display: flex;
+        align-items: center;
+        gap: px(20);
+    }
+    &__phone {
+        i {
+            padding: px(10) px(14);
+        }
+    }
+
+    a {
+        font-size: px(14);
+        padding: px(10) px(20);
+        color: white !important;
+        font-weight: 600;
+        // background-color: black;
+    }
+    &__logo-nav {
+        height: px(130);
+        img {
+            margin-left: px(20);
+        }
+        background-image: url("/images/header-bg.jpg");
+        display: grid;
+        margin-inline: auto;
+        align-items: end;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        width: min(100%, px(1140));
+    }
+    &__nav {
+        // margin-bottom: px(50);
+        padding: px(10) 0;
+        background-color: $colour-darkest;
+        display: grid;
+        margin-inline: auto;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        width: min(100%, px(1140));
+        a {
+            background-color: $colour2;
+        }
+    }
+    &__nav-selected {
+        background-color: $colour1 !important;
+        // padding: px(11) px(20) !important;
+    }
+}
