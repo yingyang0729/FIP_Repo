@@ -105,6 +105,7 @@
     }
 
     &__cards:hover {
+        transform: translateY(-10px);
         background-color: $colour1;
         @include transitionEase;
         h3,
@@ -129,7 +130,7 @@
 
 .projects {
     color: white;
-    padding: 5rem 0 2.5rem 0;
+    padding: 0m 0 2.5rem 0;
     a {
         font-size: px(30);
     }
