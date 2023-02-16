@@ -50,7 +50,6 @@
 }
 
 .mission {
-    background-color: $colour-whitegray;
     &__grid {
         display: grid;
         margin-inline: auto;
@@ -82,7 +81,6 @@
 }
 
 .programs {
-    background-color: $colour-whitegray;
     &__grid {
         display: grid;
         margin-inline: auto;
@@ -216,3 +214,14 @@
 .row .item {
     margin: 0;
 }
+
+// .playVideo {
+//     display: grid;
+//     margin-inline: auto;
+//     align-items: start;
+//     grid-template-columns: 1fr 1fr;
+
+//     grid-template-rows: auto auto;
+//     justify-items: center;
+//     width: min(100%, px(1140));
+// }

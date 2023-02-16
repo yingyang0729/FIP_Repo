@@ -101,7 +101,7 @@
             </section>
 
             <!-- Mission Headline -->
-            <section class="headline gray">
+            <section class="headline white">
                 <div class="headline__grid">
                     <p>who are we</p>
                     <h2>OUR MISSION VISION</h2>
@@ -109,7 +109,7 @@
             </section>
 
             <!-- mission content -->
-            <section class="mission">
+            <section class="mission white">
                 <div class="mission__grid">
                     <div class="mission__img">
                         <img src="images/group-shot.jpg" alt="" />
@@ -144,6 +144,9 @@
                 </div>
             </section>
 
+            <!-- spaser -->
+            <div class="spacer white"></div>
+
             <!-- OUR PROGRAMS Headline -->
             <section class="headline gray">
                 <div class="headline__grid">
@@ -153,7 +156,7 @@
             </section>
 
             <!-- OUR PROGRAM CONTENT -->
-            <section class="programs">
+            <section class="programs gray">
                 <div class="programs__grid">
                     <div class="programs__cards">
                         <div class="programs__img">
@@ -197,60 +200,115 @@
                 </div>
             </section>
 
-            <!-- Team page -->
+            <div class="spacer gray"></div>
+
+            <!-- Video Healine -->
             <section class="headline white">
                 <div class="headline__grid">
-                    <p>team</p>
-                    <h2>MEET OUR TEAM</h2>
+                    <p>video</p>
+                    <h2>Demo Video</h2>
                 </div>
             </section>
 
-            <!-- team images -->
-            <section class="projects container">
-                <div class="row">
-                    <div class="item">
-                        <div class="item-overlay">
-                            <a href="#">PAWAN PANDEYA</a>
-                            <h3>Backend Developer</h3>
-                        </div>
+            <!-- Video Content -->
+            <section class="playVideo">
+                <section class="playVid green">
+                    <div id="video" class="video-control">
+                        <video src="videos/house.mp4" controls></video>
                     </div>
 
-                    <div class="item">
-                        <div class="item-overlay">
-                            <a href="#">PAWAN PANDEYA</a>
-                            <h3>Backend Developer</h3>
+                    <div id="controls">
+                        <div id="play">
+                            <img src="images/video-play.svg" alt="play icon" />
                         </div>
-                    </div>
+                        <div id="pause">
+                            <img
+                                src="images/video-pause.svg"
+                                alt="pause icon"
+                            />
+                        </div>
+                        <div id="restart">
+                            <img
+                                src="images/video-reset.svg"
+                                alt="reset icon"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="images/video-volume.svg"
+                                alt="volume icon"
+                            />
+                        </div>
 
-                    <div class="item">
-                        <div class="item-overlay">
-                            <a href="#">PAWAN PANDEYA</a>
-                            <h3>Backend Developer</h3>
+                        <div id="volumeControl">
+                            <input
+                                type="range"
+                                min="0"
+                                max="100"
+                                value="50"
+                                id="volumeSlider"
+                            />
                         </div>
                     </div>
+                </section>
 
-                    <div class="item">
-                        <div class="item-overlay">
-                            <a href="#">PAWAN PANDEYA</a>
-                            <h3>Backend Developer</h3>
-                        </div>
+                <!-- Team page -->
+                <section class="headline gray">
+                    <div class="headline__grid">
+                        <p>team</p>
+                        <h2>MEET OUR TEAM</h2>
                     </div>
+                </section>
 
-                    <div class="item">
-                        <div class="item-overlay">
-                            <a href="#">PAWAN PANDEYA</a>
-                            <h3>Backend Developer</h3>
+                <!-- team images -->
+                <section class="projects container gray">
+                    <div class="row">
+                        <div class="item">
+                            <div class="item-overlay">
+                                <a href="#">PAWAN PANDEYA</a>
+                                <h3>Backend Developer</h3>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="item">
-                        <div class="item-overlay">
-                            <a href="#">PAWAN PANDEYA</a>
-                            <h3>Backend Developer</h3>
+                        <div class="item">
+                            <div class="item-overlay">
+                                <a href="#">PAWAN PANDEYA</a>
+                                <h3>Backend Developer</h3>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-overlay">
+                                <a href="#">PAWAN PANDEYA</a>
+                                <h3>Backend Developer</h3>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-overlay">
+                                <a href="#">PAWAN PANDEYA</a>
+                                <h3>Backend Developer</h3>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-overlay">
+                                <a href="#">PAWAN PANDEYA</a>
+                                <h3>Backend Developer</h3>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-overlay">
+                                <a href="#">PAWAN PANDEYA</a>
+                                <h3>Backend Developer</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </section>
+
+            <div class="spacer gray"></div>
         </main>
 
         <footer>
@@ -326,6 +384,7 @@
                 </nav>
             </footer>
         </footer>
+        <script src="js/video.js"></script>
         <script src="js/main.js" type="module" defer></script>
     </body>
 </html>

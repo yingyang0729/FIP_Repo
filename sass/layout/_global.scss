@@ -46,6 +46,10 @@
 .gray {
     background-color: $colour-whitegray;
 }
+
+.green {
+    background-color: $colour1;
+}
 .headline {
     &__grid {
         display: grid;
@@ -97,4 +101,7 @@
 
 .selected {
     background-color: $colour3;
+}
+.spacer {
+    height: px(100);
 }

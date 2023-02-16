@@ -284,6 +284,10 @@ p {
   background-color: #f8f8f8;
 }
 
+.green {
+  background-color: #10788e;
+}
+
 .headline__grid {
   display: grid;
   margin-inline: auto;
@@ -332,6 +336,10 @@ p {
 
 .selected {
   background-color: #5e9400;
+}
+
+.spacer {
+  height: 6.25rem;
 }
 
 .header {
@@ -513,9 +521,6 @@ footer p {
   gap: 0.625rem;
 }
 
-.mission {
-  background-color: #f8f8f8;
-}
 .mission__grid {
   display: grid;
   margin-inline: auto;
@@ -544,9 +549,6 @@ footer p {
   color: #10788e;
 }
 
-.programs {
-  background-color: #f8f8f8;
-}
 .programs__grid {
   display: grid;
   margin-inline: auto;
