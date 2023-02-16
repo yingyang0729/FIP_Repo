@@ -304,3 +304,30 @@
         margin: px(20);
     }
 }
+
+.donate {
+    img {
+        width: px(150);
+    }
+    h3 {
+        font-size: px(30);
+        color: $colour1;
+    }
+    p {
+        font-size: px(20);
+    }
+    &__grid {
+        border-radius: 0 px(80) 0 px(80);
+        padding: px(30) 0;
+        display: grid;
+        margin-inline: auto;
+        align-items: center;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        width: min(100%, px(1140));
+    }
+    &__content {
+        text-align: center;
+    }
+}

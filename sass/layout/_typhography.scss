@@ -33,9 +33,9 @@ main {
 
 //footer
 footer {
-    padding-top: px(25);
+    // padding-top: px(25);
     @include breakpoint(tablet) {
-        padding-top: px(35);
+        // padding-top: px(35);
     }
     h3 {
         font-size: px(14);
