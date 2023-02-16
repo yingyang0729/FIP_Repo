@@ -35,6 +35,10 @@ html {
   scroll-behavior: smooth;
 }
 
+p {
+  font-size: px(16);
+}
+
 .header {
   color: white;
   background-color: rgb(0, 0, 0);
@@ -273,7 +277,7 @@ html {
 }
 
 .white {
-  background-color: #f8f8f8;
+  background-color: hsl(0deg, 0%, 100%);
 }
 
 .gray {
@@ -527,7 +531,6 @@ footer p {
 .mission__main p {
   margin: 1.25rem;
   color: #10788e;
-  font-size: 1.125rem;
   font-weight: 400;
 }
 .mission__main p span {
@@ -539,4 +542,147 @@ footer p {
   font-size: 1.875rem;
   line-height: 1.875rem;
   color: #10788e;
+}
+
+.programs {
+  background-color: #f8f8f8;
+}
+.programs__grid {
+  display: grid;
+  margin-inline: auto;
+  align-items: start;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.25rem;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  width: min(100%, 71.25rem);
+}
+.programs__img img {
+  width: 100%;
+  height: 18.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.programs__cards {
+  background-color: hsl(0deg, 0%, 100%);
+}
+.programs__cards:hover {
+  background-color: #10788e;
+  transition: all 0.3s ease-in-out;
+}
+.programs__cards:hover h3,
+.programs__cards:hover p {
+  color: hsl(0deg, 0%, 100%);
+}
+.programs__content {
+  transition: all 0.3s ease-in-out;
+  height: 176px;
+}
+.programs__content h3 {
+  padding: 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #10788e;
+}
+.programs__content p {
+  padding: 0 1.25rem;
+}
+
+.projects {
+  color: white;
+  padding: 5rem 0 2.5rem 0;
+}
+.projects a {
+  font-size: 1.875rem;
+}
+
+.projects .text {
+  width: 70%;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.projects .item {
+  margin: 2rem 0;
+  height: 320px;
+  width: 100%;
+  position: relative;
+}
+
+.item:nth-child(1) {
+  background: url(../images/student01.jpg) center/cover no-repeat;
+}
+
+.item:nth-child(2) {
+  background: url(../images/student02.jpg) center/cover no-repeat;
+}
+
+.item:nth-child(3) {
+  background: url(../images/student03.jpg) center/cover no-repeat;
+}
+
+.item:nth-child(4) {
+  background: url(../images/student04.jpg) center/cover no-repeat;
+}
+
+.item:nth-child(5) {
+  background: url(../images/student05.jpg) center/cover no-repeat;
+}
+
+.item:nth-child(6) {
+  background: url(../images/student06.jpg) center/cover no-repeat;
+}
+
+.projects .item .item-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #10788e;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.projects .item .item-overlay a {
+  transition: all 0.3s ease-in-out;
+  text-transform: capitalize;
+  font-size: 1.875rem;
+  font-weight: 700;
+  font-family: var(--poppins);
+}
+
+.projects .item .item-overlay h3 {
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.projects .item:hover .item-overlay {
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.row {
+  display: grid;
+  margin-inline: auto;
+  align-items: start;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  width: min(100%, 71.25rem);
+}
+
+.row .item {
+  margin: 0;
 }
