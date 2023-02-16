@@ -213,49 +213,57 @@
 
             <!-- Video Content -->
             <section class="vid">
-                <section class="vid__grid green">
+                <div class="vid__grid green">              
                     <div id="video" class="video-control">
                         <video src="videos/house.mp4" controls></video>
                     </div>
-                    <div>
-                    <div class="vid__controls green">
-                        <div id="play">
-                            <img src="images/video-play.svg" alt="play icon" />
-                        </div>
-                        <div id="pause">
-                            <img
-                                src="images/video-pause.svg"
-                                alt="pause icon"
-                            />
-                        </div>
-                        <div id="restart">
-                            <img
-                                src="images/video-reset.svg"
-                                alt="reset icon"
-                            />
-                        </div>
-                        <div>
-                            <img
-                                src="images/video-volume.svg"
-                                alt="volume icon"
-                            />
-                        </div>
-                        </div>
+                    <div class="vid__content">
+                        <h3>
+                            Creating A Safe And Inclusive Basketball Community
+                        </h3>
+                        <p>
+                            Join us in our mission to end bullying in basketball. Watch our powerful video and discover how you can be part of the movement towards a safe and inclusive environment for all players.
+                        </p>
+                        <div class="vid__controls green">
+                    
+                            <div id="play">
+                                <img src="images/video-play.svg" alt="play icon" />
+                            </div>
+                            
+                            <div id="pause">
+                                <img
+                                    src="images/video-pause.svg"
+                                    alt="pause icon"
+                                />
+                            </div>
+                            
+                            <div id="restart">
+                                <img
+                                    src="images/video-reset.svg"
+                                    alt="reset icon"
+                                />                            
+                            </div>
 
-                        <div id="volumeControl">
-                            <input
-                                type="range"
-                                min="0"
-                                max="100"
-                                value="50"
-                                id="volumeSlider"
-                            />
+                            <div id="volumeControl">
+                                <input
+                                    type="range"
+                                    min="0"
+                                    max="100"
+                                    value="50"
+                                    id="volumeSlider"
+                                />
+                            </div>
+                    
                         </div>
-                    </div>
-                </section>
+                    </div>        
+                </div>
+
+            <div class="spacer white"></div>
+
+            </section>
 
                 <!-- Team page -->
-                <section class="headline gray">
+                 <section class="headline gray">
                     <div class="headline__grid">
                         <p>team</p>
                         <h2>MEET OUR TEAM</h2>
@@ -263,7 +271,8 @@
                 </section>
 
                 <!-- team images -->
-                <section class="projects container gray">
+                <div class="gray">
+                <section class="projects container">
                     <div class="row">
                         <div class="item">
                             <div class="item-overlay">
@@ -309,6 +318,7 @@
                     </div>
                 </section>
             </section>
+            </div>
 
             <div class="spacer gray"></div>
         </main>
