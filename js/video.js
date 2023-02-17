@@ -1,33 +1,22 @@
-(() => {
-  (vid = document.querySelector("#video video")),
-    (playButton = document.querySelector("#play")),
-    (pauseButton = document.querySelector("#pause")),
-    (restartButton = document.querySelector("#restart")),
-    (volumeSlider = document.querySelector("#volumeSlider"));
+const video = document.querySelector("#video video");
+const playButton = document.querySelector("#play");
+const pauseButton = document.querySelector("#pause");
+const restartButton = document.querySelector("#restart");
+const volumeSlider = document.querySelector("#volumeSlider");
 
-  function pauseVideo() {
-    vid.pause();
-  }
+const pauseVideo = () => video.pause();
+const playVideo = () => video.play();
+const restartVideo = () => (video.currentTime = 0);
+const setVolume = () => (video.volume = volumeSlider.value / 100);
 
-  function playVideo() {
-    vid.play();
-  }
+const hideVideoControls = () => (video.controls = false);
 
-  function restartVideo() {
-    vid.currentTime = 0;
-  }
+video.autoplay = true;
+video.loop = true;
+video.volume = 0;
 
-  function setVolume() {
-    vid.volume = volumeSlider.value / 100;
-  }
-
-  function vidControls() {
-    vid.controls = false;
-  }
-
-  vidControls();
-  pauseButton.addEventListener("click", pauseVideo);
-  playButton.addEventListener("click", playVideo);
-  restartButton.addEventListener("click", restartVideo);
-  volumeSlider.addEventListener("change", setVolume);
-})();
+hideVideoControls();
+pauseButton.addEventListener("click", pauseVideo);
+playButton.addEventListener("click", playVideo);
+restartButton.addEventListener("click", restartVideo);
+volumeSlider.addEventListener("input", setVolume);
