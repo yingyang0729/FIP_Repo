@@ -1,0 +1,15 @@
+$breakpoint-up: (
+    "tablet": 43.75em,
+    //700px
+    "desktop": 56.25em,
+    //900px
+    "wide": 90em,
+    // 1140px
+);
+
+// @include breakpoint(tablet) {
+@mixin breakpoint($size) {
+    @media (min-width: map-get($breakpoint-up, $size)) {
+        @content;
+    }
+}

@@ -1,0 +1,22 @@
+@use "../modules" as *;
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    font-size: px(18);
+    color: white !important;
+    font-weight: 500;
+    cursor: pointer;
+    border: 0;
+    background-color: $colour2;
+    padding: px(10) px(25);
+    border-radius: px(10);
+    transition: background-color 0.5s ease-in-out;
+    // transition: color 300ms ease-in-out;
+}
+
+.btn:hover {
+    background-color: $colour3;
+}

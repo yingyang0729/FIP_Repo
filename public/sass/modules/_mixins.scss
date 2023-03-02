@@ -1,0 +1,42 @@
+@use "./function" as *;
+
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+//  @include transitionEase;
+@mixin transitionEase {
+    transition: all 0.6s ease-in-out;
+}
+
+//  @include grid(normal, center);
+@mixin grid($direction1, $direction2) {
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-inline: auto;
+    justify-items: $direction1;
+    align-items: $direction2;
+    // grid-template-columns: 1fr;
+    width: min(100% - px(40), px(1000));
+}
+
+// @include imagefit(px(545));
+@mixin imagefit($height) {
+    width: 100%;
+    height: $height;
+    object-fit: cover;
+}
+
+@mixin sudo-dash {
+    position: absolute;
+    background: #00adb9;
+    content: "";
+    display: inline-block;
+    width: px(20);
+    height: px(3);
+    top: px(10);
+    left: px(-25);
+}

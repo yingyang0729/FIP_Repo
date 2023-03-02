@@ -1,0 +1,25 @@
+// @use "/sass/modules/" as *;
+
+$colour-white: hsl(0, 0%, 100%);
+$colour-whitegray: #f2f5f8;
+$colour-darkest: #204c56;
+$colour-headerline: hsl(0, 0%, 91%);
+$colour-footerline: #474747;
+$colour1: #4ecdc4;
+$colour2: #26a69a;
+$colour3: #168076;
+$colour-footerfont: #ffffff;
+
+//font-weight: map-get($font-weights, regular);
+$font-weights: (
+    "regular": 400,
+    "medium": 600,
+    "bold": 700,
+    "black": 900,
+);
+
+//font-weight: weight(bold);
+
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+}

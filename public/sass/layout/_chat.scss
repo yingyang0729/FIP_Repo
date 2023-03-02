@@ -1,0 +1,88 @@
+@use "../modules" as *;
+
+.center {
+    margin-top: px(50);
+    margin-bottom: px(20);
+}
+
+.chat {
+    height: 670px;
+    border-radius: px(10);
+    background-color: #f2f5f8;
+    display: grid;
+    margin-inline: auto;
+    align-items: start;
+    align-content: space-between;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    // justify-items: center;
+    width: min(100%, px(500));
+}
+
+textarea {
+    width: 90%;
+    height: 50px;
+    border-radius: 0.5em;
+    resize: none;
+}
+
+input[type="submit"] {
+    display: block;
+    padding: 8px 12px;
+    border-radius: 0.5em;
+}
+
+.chat-messages {
+    color: white;
+    width: 300px;
+    word-wrap: break-word;
+    float: left;
+    clear: both;
+    border-radius: 0 px(20) px(20) px(20);
+    padding: px(5) px(20);
+    background-color: rgba(0, 150, 150, 0.8);
+    margin-bottom: px(5);
+    p {
+        font-size: px(14);
+        span {
+            font-size: px(10);
+            font-style: italic;
+        }
+    }
+}
+
+.other-messages {
+    float: right;
+    border-radius: px(20) 0 px(20) px(20);
+
+    background-color: rgba(150, 107, 0, 0.8);
+}
+
+.chat-window {
+    h2 {
+        font-size: px(14);
+    }
+}
+
+.recieve_container {
+    padding: px(20);
+    overflow-y: scroll;
+    height: px(550);
+}
+
+.message_container {
+    padding: px(20);
+    gap: px(5);
+    display: flex;
+    background-color: $colour2;
+}
+
+.typing-event {
+    height: px(20);
+    p {
+        margin-top: px(10);
+        margin-left: px(20);
+        font-size: px(12);
+        color: gray;
+    }
+}

@@ -1,0 +1,39 @@
+@use "../modules" as *;
+
+.title {
+    text-align: center;
+    color: white;
+    p {
+        font-size: px(20);
+        text-transform: uppercase;
+    }
+    h1 {
+        font-size: px(55);
+        font-weight: 600;
+    }
+}
+
+#login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $colour1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.login-box {
+    margin-top: px(50);
+    padding: px(10) px(80);
+    border-radius: px(10);
+    box-shadow: 6px 3px 10px rgba(0, 0, 0, 0.16);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: px(10);
+}
