@@ -19,6 +19,16 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/views/index.html");
 });
 
+app.get('/contact', (req, res) => {
+    // this is pointing index.htmk --> shared page
+    res.sendFile(__dirname + '/views/contact.html');
+});
+
+app.get('/chat', (req, res) => {
+    // this is pointing index.htmk --> shared page
+    res.sendFile(__dirname + '/views/chat.html');
+});
+
 server.listen(port, () => {
     console.log(`listening on ${port}`);
 });

@@ -1,5 +1,5 @@
 {
-    "name": "jerome_f_chatapp",
+    "name": "fipchatapp",
     "version": "1.0.0",
     "description": "chat app with node and express",
     "main": "app.js",

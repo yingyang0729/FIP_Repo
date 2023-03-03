@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="css/main.css" />
+        <title>Chat</title>
+    </head>
+    <header>
+
+    
+        <a href="/">home page</a>
+    <a href="/chat">Services page</a>
+    <a href="/contact">Contact page</a>
+    </header>
+    <body>
+        <main id="app">
+            <!-- login page -->
+            <section id="login-overlay" v-if="!isHidden">
+                <div class="title">
+                    <p>Welcome to</p>
+                    <h1>ChatAPP</h1>
+                </div>
+                <div class="login-box">
+                    <input
+                        v-model="nickname"
+                        type="text"
+                        id="username"
+                        class="username"
+                        placeholder="pick a nickname"
+                    />
+
+                    <button
+                        v-on:click="isHidden = true"
+                        id="usernameSubmit"
+                        class="btn"
+                        type="submit"
+                    >
+                        Confirm
+                    </button>
+                </div>
+            </section>
+
+            <section class="center">
+                <div class="title">
+                    <p>Welcome to</p>
+                    <h1>ChatAPP</h1>
+                </div>
+                <section class="chat">
+                    <!-- Messages box -->
+                    <div class="typing-event">
+                        <p v-if="typing">{{ typist }}</p>
+                        <usertyping></usertyping>
+                    </div>
+                    <section class="messages">
+                        <div class="recieve_container">
+                            <ul>
+                                <!-- render a new message component for every message -->
+                                <newmsg
+                                    v-for="message in messages"
+                                    :message="message"
+                                ></newmsg>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Message container-->
+
+                    <section>
+                        <form class="message_container">
+                            <textarea
+                                @focus="catchTextFocus"
+                                v-model="message"
+                                id="textarea"
+                                autocomplete="off"
+                            ></textarea>
+
+                            <input
+                                @click.prevent="dispatchMessage"
+                                type="submit"
+                                value="Send"
+                                class="send btn"
+                            />
+                        </form>
+                    </section>
+                </section>
+            </section>
+        </main>
+
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/main.js" type="module" defer></script>
+    </body>
+</html>
