@@ -1,0 +1,96 @@
+@use "../modules" as *;
+
+.team-bio {
+    margin: px(30) 0;
+    display: grid;
+    margin-inline: auto;
+    align-items: start;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    gap: px(20);
+    width: min(100%, px(1140));
+
+    @include breakpoint(tablet) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__intro {
+        h2 {
+            font-size: px(60);
+            margin: px(60) 0 px(20);
+            span {
+                color: $colour1;
+                text-transform: uppercase;
+                line-height: px(35);
+            }
+        }
+    }
+    &__info {
+        h4,
+        h5,
+        p {
+            margin: 0 0 0 px(20);
+        }
+        h4 {
+            font-size: px(30);
+        }
+        h5 {
+            font-size: px(15);
+            font-style: italic;
+            font-weight: 500;
+            margin-bottom: px(20);
+        }
+        p {
+            font-size: px(13);
+            margin-right: px(20);
+        }
+        img {
+            width: 100%;
+            height: px(340);
+            object-fit: cover;
+        }
+    }
+    &__name {
+    }
+    &__thumb {
+        h3 {
+            margin-top: px(20);
+            font-size: px(16);
+            color: $colour1;
+        }
+        h4 {
+            margin: 0;
+            font-size: px(30);
+        }
+        p {
+            font-size: px(13);
+            line-height: px(14);
+            margin-bottom: px(20);
+        }
+    }
+    &__grid {
+        p {
+            margin-bottom: 0;
+        }
+        display: grid;
+        margin-inline: auto;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        gap: px(20);
+        img {
+            width: 100%;
+            height: px(130);
+            object-fit: cover;
+            filter: saturate(10%);
+        }
+        img:hover {
+            @include transitionEase;
+            filter: saturate(100%);
+            transform: scale(1.03);
+            transform-origin: center center;
+        }
+    }
+}

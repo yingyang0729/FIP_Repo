@@ -1,0 +1,314 @@
+@use "../modules" as *;
+
+.sliding {
+    color: $colour-white;
+    overflow: hidden;
+    h2 {
+        font-size: px(80);
+        line-height: px(60);
+    }
+    h3 {
+        font-size: px(45);
+        font-weight: 300;
+    }
+
+    &__container {
+        display: flex;
+        overflow-x: visible;
+        transform: translateX(0);
+        transition: transform 1.5s ease-in-out;
+    }
+
+    &__section {
+        width: 100%;
+        flex: none;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 640px;
+            object-fit: cover;
+        }
+    }
+    &__content1,
+    &__content2,
+    &__content3 {
+        position: absolute;
+    }
+    &__content1 {
+        top: 30%;
+        right: 20%;
+    }
+    &__content2,
+    &__content3 {
+        top: 55%;
+        left: 25%;
+    }
+    &__buttons {
+        margin-top: px(20);
+        display: flex;
+        gap: px(10);
+    }
+}
+
+.mission {
+    &__grid {
+        display: grid;
+        margin-inline: auto;
+        align-items: start;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        width: min(100% - px(40), px(1140));
+        @include breakpoint(tablet) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    &__img {
+        img {
+            width: 100%;
+            height: px(400);
+            object-fit: cover;
+        }
+    }
+    &__main {
+        margin-left: px(20);
+        p {
+            // margin: px(20);
+            padding-right: px(20);
+            margin: px(20) 0;
+            color: $colour1;
+            // font-size: px(18);
+            font-weight: 400;
+            span {
+                font-weight: 500;
+                font-size: px(20);
+                color: $colour3;
+            }
+        }
+        h3 {
+            font-size: px(30);
+            line-height: px(30);
+            color: $colour1;
+        }
+    }
+}
+
+.programs {
+    &__grid {
+        display: grid;
+        margin-inline: auto;
+        align-items: start;
+        grid-template-columns: 1fr;
+        gap: px(20);
+        grid-template-rows: auto auto;
+        justify-items: center;
+        width: min(100% - px(40), px(1140));
+        @include breakpoint(tablet) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    &__img {
+        img {
+            width: 100%;
+            height: px(296);
+            object-fit: cover;
+        }
+    }
+    &__cards {
+        background-color: $colour-white;
+        @include transitionEase;
+    }
+
+    &__cards:hover {
+        transform: translateY(-5px);
+        background-color: $colour1;
+        @include transitionEase;
+        h3,
+        p {
+            color: $colour-white;
+        }
+    }
+    &__content {
+        @include transitionEase;
+        height: 176px;
+        h3 {
+            padding: px(20);
+            font-size: px(20);
+            font-weight: 700;
+            color: $colour1;
+        }
+        p {
+            padding: 0 px(20);
+        }
+    }
+}
+
+.projects {
+    color: white;
+    padding: 0m 0 2.5rem 0;
+    a {
+        font-size: px(30);
+    }
+}
+.projects .text {
+    width: 70%;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+.projects .item {
+    margin: 2rem 0;
+    height: 320px;
+    width: 100%;
+    position: relative;
+}
+
+.item:nth-child(1) {
+    background: url(../images/student01.jpg) center/cover no-repeat;
+}
+.item:nth-child(2) {
+    background: url(../images/student02.jpg) center/cover no-repeat;
+}
+.item:nth-child(3) {
+    background: url(../images/student03.jpg) center/cover no-repeat;
+}
+.item:nth-child(4) {
+    background: url(../images/student04.jpg) center/cover no-repeat;
+}
+.item:nth-child(5) {
+    background: url(../images/student05.jpg) center/cover no-repeat;
+}
+.item:nth-child(6) {
+    background: url(../images/student06.jpg) center/cover no-repeat;
+}
+
+.projects .item .item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $colour1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    opacity: 0;
+    @include transitionEase;
+}
+.projects .item .item-overlay a {
+    @include transitionEase;
+    text-transform: capitalize;
+    font-size: px(30);
+    font-weight: 700;
+    font-family: var(--poppins);
+}
+.projects .item .item-overlay h3 {
+    @include transitionEase;
+    font-weight: 500;
+
+    font-size: px(20);
+}
+.projects .item:hover .item-overlay {
+    @include transitionEase;
+    opacity: 1;
+}
+.container {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.row {
+    display: grid;
+    margin-inline: auto;
+    align-items: start;
+    grid-template-columns: 1fr;
+
+    grid-template-rows: auto auto;
+    justify-items: center;
+    width: min(100%, px(1140));
+    @include breakpoint(tablet) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include breakpoint(desktop) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+.row .item {
+    margin: 0;
+}
+
+.vid {
+    color: $colour-white;
+    h3 {
+        font-size: px(30);
+        line-height: px(30);
+    }
+    p {
+        font-size: px(18);
+        margin: px(30) 0;
+    }
+    video {
+        width: 100%;
+        height: 3 60px;
+        object-fit: cover;
+        @include breakpoint(tablet) {
+            height: 410px;
+        }
+        @include breakpoint(desktop) {
+            height: 460px;
+        }
+    }
+    &__grid {
+        display: grid;
+        margin-inline: auto;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        width: min(100%, px(1140));
+        @include breakpoint(tablet) {
+            grid-template-columns: 2fr 1fr;
+        }
+    }
+    &__controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: px(10);
+        img {
+            height: px(20);
+        }
+    }
+    &__content {
+        margin: px(20);
+    }
+}
+
+.donate {
+    img {
+        width: px(150);
+    }
+    h3 {
+        font-size: px(30);
+        color: $colour1;
+    }
+    p {
+        font-size: px(20);
+    }
+    &__grid {
+        border-radius: 0 px(80) 0 px(80);
+        padding: px(30) 0;
+        display: grid;
+        margin-inline: auto;
+        align-items: center;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        width: min(100% - px(40), px(1140));
+    }
+    &__content {
+        text-align: center;
+    }
+}
