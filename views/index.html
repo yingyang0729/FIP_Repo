@@ -1,179 +1,430 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>team contact page</title>
-</head>
-<body>
-    <!-- <header>
-    <a href="/">home page</a>
-<a href="/chat">Services page</a>
-<a href="/contact">Contact page</a>
-</header> -->
-<header class="header">
-    <section class="header__logo-nav">
-        <div class="header__logo">
-            <img src="/images/safe-logo-3.svg" alt="" />
-        </div>
-        <div class="header__contact">
-            <div class="header__mail">
-                <i class="fa-solid fa-envelope"></i>
-                <p>info@safesearch.com</p>
-            </div>
-            <div class="header__phone">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <p>1.800.888.8888</p>
-            </div>
-        </div>
-    </section>
-    <nav class="header__nav">
-        <ul>
-            <a class="header__nav-selected" href="/">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Services</a>
-            <a href="#">Team</a>
-            <a href="/contact">Contact</a>
-            <a href="/chat">Chat</a>
-        </ul>
-    </nav>
-</header>
-<main>
-    <section class="sliding">
-        <div class="sliding__container">
-            <div class="sliding__section">
-                <img src="./images/carosel01.jpg" alt="header img" />
-                <div class="sliding__content1">
-                    <h2>EVERYONE <br />DESERVES <br />A CHANCE</h2>
-                    <h3>to play & be happy</h3>
-                    <div class="sliding__buttons">
-                        <div class="btn2">
-                            <a href="#">read more</a>
+<html>
+    <head>
+        <title>SafeReach</title>
+        <script
+            src="https://kit.fontawesome.com/62e3d456b9.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/css/main.css" />
+    </head>
+    <body>
+        <header class="header">
+            <section class="header__logo-nav">
+                <div class="header__logo">
+                    <img src="/images/safe-logo-3.svg" alt="" />
+                </div>
+                <div class="header__contact">
+                    <div class="header__mail">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>info@safesearch.com</p>
+                    </div>
+                    <div class="header__phone">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <p>1.800.888.8888</p>
+                    </div>
+                </div>
+            </section>
+            <nav class="header__nav">
+                <ul>
+                    <a class="header__nav-selected" href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Services</a>
+                    <a href="#">Team</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Sample</a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- slider -->
+            <section class="sliding">
+                <div class="sliding__container">
+                    <div class="sliding__section">
+                        <img src="./images/carosel01.jpg" alt="header img" />
+                        <div class="sliding__content1">
+                            <h2>EVERYONE <br />DESERVES <br />A CHANCE</h2>
+                            <h3>to play & be happy</h3>
+                            <div class="sliding__buttons">
+                                <div class="btn2">
+                                    <a href="#">read more</a>
+                                </div>
+                                <div class="btn">
+                                    <i class="fa-solid fa-play"></i>
+                                    <a href="#">watch video</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="btn">
-                            <i class="fa-solid fa-play"></i>
-                            <a href="#">watch video</a>
-                            <a href="/firstlink">firstlink</a>
+                    </div>
+
+                    <div class="sliding__section">
+                        <img src="./images/carosel02.jpg" alt="header img" />
+                        <div class="sliding__content2">
+                            <h2>BASKETBALL <br />IS A TEAM SPORT</h2>
+                            <h3>leave the bullying off the court</h3>
+                            <div class="sliding__buttons">
+                                <div class="btn2">
+                                    <a href="#">read more</a>
+                                </div>
+                                <div class="btn">
+                                    <i class="fa-solid fa-play"></i>
+                                    <a href="#">watch video</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sliding__section">
+                        <img src="./images/carosel03.jpg" alt="header img" />
+                        <div class="sliding__content3">
+                            <h2>BASKETBALL IS A <br />GAME FOR EVERYONE</h2>
+                            <h3>regardless of race and gender</h3>
+                            <div class="sliding__buttons">
+                                <div class="btn2">
+                                    <a href="#">read more</a>
+                                </div>
+                                <div class="btn">
+                                    <i class="fa-solid fa-play"></i>
+                                    <a href="#">watch video</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="sliding__section">
-                <img src="./images/carosel02.jpg" alt="header img" />
-                <div class="sliding__content2">
-                    <h2>BASKETBALL <br />IS A TEAM SPORT</h2>
-                    <h3>leave the bullying off the court</h3>
-                    <div class="sliding__buttons">
-                        <div class="btn2">
-                            <a href="#">read more</a>
+            <!-- Mission Headline -->
+            <section class="headline white">
+                <div class="headline__grid">
+                    <div>
+                        <p>who are we</p>
+                        <h2>OUR MISSION VISION</h2>
+                    </div>
+                </div>
+            </section>
+
+            <!-- mission content -->
+            <section class="mission white">
+                <div class="mission__grid gray">
+                    <div class="mission__img">
+                        <img src="images/group-shot.jpg" alt="" />
+                    </div>
+                    <div class="mission__main">
+                        <p><span> Hello there!</span></p>
+                        <h3>
+                            We Are A Small Community Of Basketball Enthusiasts.
+                        </h3>
+                        <p>
+                            Who are committed to creating a safe and inclusive
+                            environment in the sport of basketball
+                        </p>
+                        <div class="intro__buttons">
+                            <button data-name="first" class="mission-btn">
+                                Who are we
+                            </button>
+                            <button data-name="second" class="mission-btn">
+                                Our Mission
+                            </button>
+                            <button data-name="third" class="mission-btn">
+                                Our Vision
+                            </button>
                         </div>
-                        <div class="btn">
-                            <i class="fa-solid fa-play"></i>
-                            <a href="#">watch video</a>
-                            <a href="/secondlink">secondlink</a>
+                        <p class="mission__content">
+                            With the belief that sports should be a place where
+                            everyone feels valued, respected, and encouraged to
+                            reach their full potential, we have come together to
+                            launch a movement against bullying in basketball.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- spaser -->
+            <div class="spacer white"></div>
+
+            <!-- OUR PROGRAMS Headline -->
+            <section class="headline gray">
+                <div class="headline__grid">
+                    <div>
+                        <p>what we do</p>
+                        <h2>OUR PROGRAMS</h2>
+                    </div>
+                </div>
+            </section>
+
+            <!-- OUR PROGRAM CONTENT -->
+            <section class="programs gray">
+                <div class="programs__grid">
+                    <div class="programs__cards">
+                        <div class="programs__img">
+                            <img src="images/programs1.jpg" alt="" />
+                        </div>
+                        <div class="programs__content">
+                            <h3>Partner with schools and youth leagues</h3>
+                            <p>
+                                By partnering with local schools and youth
+                                basketball leagues, the website can provide ...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="programs__cards">
+                        <div class="programs__img">
+                            <img src="images/programs2.jpg" alt="" />
+                        </div>
+                        <div class="programs__content">
+                            <h3>Host events and workshops</h3>
+                            <p>
+                                Bringing together members of the basketball
+                                community through events and workshops ...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="programs__cards">
+                        <div class="programs__img">
+                            <img src="images/programs3.jpg" alt="" />
+                        </div>
+                        <div class="programs__content">
+                            <h3>Create a peer-to-peer support network</h3>
+                            <p>
+                                Creating a supportive and empowering environment
+                                for individuals who have been affected by
+                                bullying ...
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="sliding__section">
-                <img src="./images/carosel03.jpg" alt="header img" />
-                <div class="sliding__content3">
-                    <h2>BASKETBALL IS A <br />GAME FOR EVERYONE</h2>
-                    <h3>regardless of race and gender</h3>
-                    <div class="sliding__buttons">
-                        <div class="btn2">
-                            <a href="#">read more</a>
-                        </div>
-                        <div class="btn">
-                            <i class="fa-solid fa-play"></i>
-                            <a href="#">watch video</a>
-                            <a href="/thirdlink">Thirdlink</a>
+            <div class="spacer gray"></div>
+
+            <!-- Video Healine -->
+            <section class="headline white">
+                <div class="headline__grid">
+                    <div>
+                        <p>video</p>
+                        <h2>Demo Video</h2>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Video Content -->
+            <section class="vid">
+                <div class="vid__grid green">
+                    <div id="video" class="video-control">
+                        <video src="videos/safereach.mp4" controls></video>
+                    </div>
+                    <div class="vid__content">
+                        <h3>
+                            Creating A Safe And Inclusive Basketball Community
+                        </h3>
+                        <p>
+                            Join us in our mission to end bullying in
+                            basketball. Watch our powerful video and discover
+                            how you can be part of the movement towards a safe
+                            and inclusive environment for all players.
+                        </p>
+                        <div class="vid__controls green">
+                            <div id="play">
+                                <img
+                                    src="images/video-play.svg"
+                                    alt="play icon"
+                                />
+                            </div>
+
+                            <div id="pause">
+                                <img
+                                    src="images/video-pause.svg"
+                                    alt="pause icon"
+                                />
+                            </div>
+
+                            <div id="restart">
+                                <img
+                                    src="images/video-reset.svg"
+                                    alt="reset icon"
+                                />
+                            </div>
+
+                            <div id="volumeControl">
+                                <input
+                                    type="range"
+                                    min="0"
+                                    max="100"
+                                    value="0"
+                                    id="volumeSlider"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="spacer white"></div>
+            </section>
+
+            <!-- Team page -->
+            <section class="headline gray">
+                <div class="headline__grid">
+                    <div>
+                        <p>team</p>
+                        <h2>MEET OUR TEAM</h2>
+                    </div>
+                </div>
+            </section>
+
+            <!-- team images -->
+            <div class="gray">
+                <section class="projects container">
+                    <div class="row">
+                        <div class="item">
+                            <div class="item-overlay">
+                                <a href="#">Aixin Zhong</a>
+                                <h3>Backend Developer</h3>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-overlay">
+                                <a href="#">Erme Usun</a>
+                                <h3>Backend Developer</h3>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-overlay">
+                                <a href="#">Inderpal Singh Brar</a>
+                                <h3>Backend Developer</h3>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-overlay">
+                                <a href="#">Jerome Fernandez</a>
+                                <h3>Backend Developer</h3>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-overlay">
+                                <a href="#">Pawan Pandeya</a>
+                                <h3>Backend Developer</h3>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-overlay">
+                                <a href="#">PAWAN PANDEYA</a>
+                                <h3>Ying Yang</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </div>
-    </section>
-</main>
-<footer>
-    <footer class="footer">
-        <div class="spacer2"></div>
-        <nav class="footer__nav">
-            <section class="footer__links">
-                <div>
-                    <h3>Official Links</h3>
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
-                            <a href="#">Service</a>
-                            <a href="#">About us</a>
-                            <a href="#">Contact us</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="footer__useful">
-                <div>
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li>
-                            <a href="#">Help</a>
-                            <a href="#">History</a>
-                            <a href="#">Support</a>
-                            <a href="#">Faq</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+            <div class="spacer gray"></div>
 
-            <section class="footer__contact">
-                <h3>Contact Information</h3>
-                <div>
-                    <i class="fa-solid fa-location-dot"></i>
+            <div class="spacer2 green"></div>
+            <section class="donate green">
+                <div class="donate__grid white">
+                    <div class="donate__content">
+                        <h3>
+                            Be a Champion for Safe and Inclusive Basketball.
+                        </h3>
+                        <p>Support our Mission with a Donation</p>
+                        <a href="#">watch video</a>
+                    </div>
+                    <div>
+                        <img src="images/donate.svg" alt="" />
+                    </div>
+                </div>
+            </section>
+            <div class="spacer2 green"></div>
+        </main>
 
-                    <p>
-                        1001 Fanshawe College Blvd, London, ON N5Y 5R6
-                    </p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>yourmail@gmail.com</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-phone"></i>
-                    <p>011548454544</p>
-                </div>
-            </section>
-            <section class="footer__logo">
-                <div>
-                    <img src="/images/safe-logo-white.svg" alt="" />
-                </div>
-                <div>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Magnam earum ratione veritatis
-                        sint. Aliquid error perferendis quod a
-                        dignissimos ea.
-                    </p>
-                </div>
-                <div>
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
-            </section>
-            <section class="footer__reserve">
-                <p>Copyright by SAFEREACH 2023. All rights reserved.</p>
-            </section>
-        </nav>
-    </footer>
-</body>
+        <footer>
+            <footer class="footer">
+                <div class="spacer2"></div>
+                <nav class="footer__nav">
+                    <section class="footer__links">
+                        <div>
+                            <h3>Official Links</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                    <a href="#">Service</a>
+                                    <a href="#">About us</a>
+                                    <a href="#">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="footer__useful">
+                        <div>
+                            <h3>Useful Links</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Help</a>
+                                    <a href="#">History</a>
+                                    <a href="#">Support</a>
+                                    <a href="#">Faq</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="footer__contact">
+                        <h3>Contact Information</h3>
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <p>
+                                1001 Fanshawe College Blvd, London, ON N5Y 5R6
+                            </p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>yourmail@gmail.com</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <p>011548454544</p>
+                        </div>
+                    </section>
+                    <section class="footer__logo">
+                        <div>
+                            <img src="/images/safe-logo-white.svg" alt="" />
+                        </div>
+                        <div>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam earum ratione veritatis
+                                sint. Aliquid error perferendis quod a
+                                dignissimos ea.
+                            </p>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </section>
+                    <section class="footer__reserve">
+                        <p>Copyright by SAFEREACH 2023. All rights reserved.</p>
+                    </section>
+                </nav>
+            </footer>
+        </footer>
+        <script src="js/video.js"></script>
+        <script src="js/components/TheSlider.js" type="module" defer></script>
+        <script src="js/main.js" type="module" defer></script>
+    </body>
 </html>
-
-
-
-

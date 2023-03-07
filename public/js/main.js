@@ -1,6 +1,8 @@
 // import will always go on top
 import chatMsg from "./components/ChatMessage.js";
 import UserTyping from "./components/Usertyping.js";
+import { getData } from "./components/sql.js";
+getData();
 
 const socket = io();
 
