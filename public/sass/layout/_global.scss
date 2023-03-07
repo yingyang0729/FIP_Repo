@@ -21,6 +21,19 @@
     background-color: $colour2;
 }
 
+.btn-orange {
+    font-size: px(20);
+    color: white !important;
+    font-weight: 700;
+    cursor: pointer;
+    border: 0;
+    background-color: $colourOrange;
+    padding: px(10) px(30);
+    border-radius: px(5);
+    transition: background-color 0.5s ease-in-out;
+    // transition: color 300ms ease-in-out;
+}
+
 .btn2 {
     font-size: px(20);
     color: $colour1 !important;

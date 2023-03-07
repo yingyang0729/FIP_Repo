@@ -13,6 +13,10 @@
         width: 100%;
     }
 
+    &__chat {
+        margin-right: px(40);
+    }
+
     &__logo {
         img {
             width: px(284);
@@ -61,9 +65,9 @@
         display: grid;
         margin-inline: auto;
         align-items: end;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto;
-        justify-items: center;
+        justify-items: end;
         width: min(100%, px(1140));
     }
     &__nav {
@@ -78,9 +82,13 @@
         justify-items: center;
         width: min(100%, px(1140));
         a {
+            background-color: $colour-darkest;
+        }
+        a:hover {
             background-color: $colour2;
         }
     }
+
     &__nav-selected {
         background-color: $colour1 !important;
         // padding: px(11) px(20) !important;
