@@ -7,13 +7,32 @@
 
         <link rel="stylesheet" href="css/main.css" />
         <title>Chat</title>
+        <script
+            src="https://kit.fontawesome.com/62e3d456b9.js"
+            crossorigin="anonymous"
+        ></script>
     </head>
-    <header>
-
-    
-        <a href="/">home page</a>
-    <a href="/chat">Chat page</a>
-    <a href="/contact">Contact page</a>
+    <header class="header">
+        <section class="header__logo-nav">
+            <div class="header__logo">
+                <img src="/images/safe-logo-3.svg" alt="" />
+            </div>
+            <div></div>
+            <div class="header__chat">
+                <a class="btn-orange" href="/chat">Join Chat!</a>
+                <!-- <a href="/chat">Services page</a> -->
+            </div>
+        </section>
+        <nav class="header__nav">
+            <ul>
+                <a href="/">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Team</a>
+                <a href="#">Contact</a>
+                <a href="#">Sample</a>
+            </ul>
+        </nav>
     </header>
     <body>
         <main id="app">
@@ -42,11 +61,21 @@
                     </button>
                 </div>
             </section>
-
+            <div class="spacer"></div>
             <section class="center">
-                <div class="title">
-                    <p>Welcome to</p>
-                    <h1>ChatAPP</h1>
+                <div class="center__copy">
+                    <h2 class="hidden">Join Chat</h2>
+                    <p><span> JOIN OUR CONVERSATION</span></p>
+                    <h3>Against Bullying in Basketball</h3>
+                    <p>
+                        Connect with other basketball enthusiasts who share our
+                        vision for an inclusive and safe sport. Our chat app
+                        provides a platform for open dialogue and support
+                        against bullying in basketball. Share your experiences,
+                        ask for advice, and collaborate on ways to create
+                        positive change. Join us in standing up against bullying
+                        and promoting a culture of respect on and off the court.
+                    </p>
                 </div>
                 <section class="chat">
                     <!-- Messages box -->
@@ -87,7 +116,82 @@
                     </section>
                 </section>
             </section>
+            <div class="spacer"></div>
         </main>
+        <footer>
+            <footer class="footer">
+                <div class="spacer2"></div>
+                <nav class="footer__nav">
+                    <section class="footer__links">
+                        <div>
+                            <h3>Official Links</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                    <a href="#">Service</a>
+                                    <a href="#">About us</a>
+                                    <a href="#">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="footer__useful">
+                        <div>
+                            <h3>Useful Links</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Help</a>
+                                    <a href="#">History</a>
+                                    <a href="#">Support</a>
+                                    <a href="#">Faq</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="footer__contact">
+                        <h3>Contact Information</h3>
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <p>
+                                1001 Fanshawe College Blvd, London, ON N5Y 5R6
+                            </p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>yourmail@gmail.com</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <p>011548454544</p>
+                        </div>
+                    </section>
+                    <section class="footer__logo">
+                        <div>
+                            <img src="/images/safe-logo-white.svg" alt="" />
+                        </div>
+                        <div>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam earum ratione veritatis
+                                sint. Aliquid error perferendis quod a
+                                dignissimos ea.
+                            </p>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </section>
+                    <section class="footer__reserve">
+                        <p>Copyright by SAFEREACH 2023. All rights reserved.</p>
+                    </section>
+                </nav>
+            </footer>
+        </footer>
 
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <script src="/socket.io/socket.io.js"></script>

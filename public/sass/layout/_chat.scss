@@ -1,8 +1,25 @@
 @use "../modules" as *;
 
 .center {
-    margin-top: px(50);
-    margin-bottom: px(20);
+    display: grid;
+    margin-inline: auto;
+    align-items: start;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    width: min(100% - px(40), px(1140));
+    @include breakpoint(tablet) {
+        grid-template-columns: 1fr 1fr;
+    }
+    &__copy {
+        p {
+            font-size: px(20);
+        }
+        h3 {
+            font-weight: 600;
+            font-size: px(55);
+        }
+    }
 }
 
 .chat {

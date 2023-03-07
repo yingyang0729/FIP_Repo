@@ -38,8 +38,25 @@ html {
 }
 
 .center {
-  margin-top: 3.125rem;
-  margin-bottom: 1.25rem;
+  display: grid;
+  margin-inline: auto;
+  align-items: start;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  width: min(100% - 2.5rem, 71.25rem);
+}
+@media (min-width: 43.75em) {
+  .center {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.center__copy p {
+  font-size: 1.25rem;
+}
+.center__copy h3 {
+  font-weight: 600;
+  font-size: 3.4375rem;
 }
 
 .chat {
@@ -465,12 +482,16 @@ input[type=submit] {
   font-weight: 600;
 }
 
+#app {
+  position: relative;
+}
+
 #login-overlay {
-  position: fixed;
-  top: 0;
+  position: absolute;
   left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
   background-color: #10788e;
   display: flex;
   flex-direction: column;
@@ -480,14 +501,29 @@ input[type=submit] {
 }
 
 .login-box {
-  margin-top: 3.125rem;
-  padding: 0.625rem 5rem;
-  border-radius: 0.625rem;
+  margin-top: 50px;
+  padding: 10px 80px;
+  border-radius: 10px;
   box-shadow: 6px 3px 10px rgba(0, 0, 0, 0.16);
   background-color: white;
   display: flex;
   flex-direction: column;
-  gap: 0.625rem;
+  gap: 10px;
+}
+
+input[type=text] {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 0.5em;
+  border: 1px solid rgb(189, 189, 189);
+}
+
+input[type=text]:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #10788e;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(31, 124, 224, 0.25);
 }
 
 .sliding {
