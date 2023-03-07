@@ -2,7 +2,7 @@
 
 .title {
     text-align: center;
-    color: white;
+    color: $colour1;
     p {
         font-size: px(20);
         text-transform: uppercase;
@@ -18,6 +18,7 @@
 }
 
 #login-overlay {
+    padding-top: px(200);
     position: absolute;
     left: 0;
     right: 0;
@@ -26,14 +27,14 @@
     background-color: $colour1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     z-index: 9999;
 }
 
 .login-box {
     margin-top: 50px;
-    padding: 10px 80px;
+    padding: 30px 80px;
     border-radius: 10px;
     box-shadow: 6px 3px 10px rgba(0, 0, 0, 0.16);
     background-color: white;
@@ -54,5 +55,5 @@ input[type="text"]:focus {
     background-color: #fff;
     border-color: $colour1;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(31, 124, 224, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }

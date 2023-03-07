@@ -38,11 +38,11 @@
         <main id="app">
             <!-- login page -->
             <section id="login-overlay" v-if="!isHidden">
-                <div class="title">
-                    <p>Welcome to</p>
-                    <h1>ChatAPP</h1>
-                </div>
                 <div class="login-box">
+                    <div class="title">
+                        <p>Welcome to</p>
+                        <h1>ChatAPP</h1>
+                    </div>
                     <input
                         v-model="nickname"
                         type="text"
@@ -76,6 +76,7 @@
                         positive change. Join us in standing up against bullying
                         and promoting a culture of respect on and off the court.
                     </p>
+                    <!-- <img src="/images/chat.jpg" alt="" /> -->
                 </div>
                 <section class="chat">
                     <!-- Messages box -->
