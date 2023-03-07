@@ -1,0 +1,17 @@
+{
+    "first": {
+        "img": "group-shot.jpg",
+        "alt": "thermo control",
+        "info3": "With the belief that sports should be a place where everyone feels valued, respected, and encouraged to reach their full potential, we have come together to launch a movement against bullying in basketball."
+    },
+    "second": {
+        "img": "mission.jpg",
+        "alt": "dorbell camera",
+        "info3": "Our mission to empower the basketball community to rise above bullying through respect, kindness, and inclusiveness. Creating a safe and supportive environment for all to reach their full potential."
+    },
+    "third": {
+        "img": "vission.jpg",
+        "alt": "keyless lock/unlock",
+        "info3": "Our vision is to transform basketball into a safe, inclusive, and empowering place for all. Inspiring everyone to reach their full potential and find joy in the game."
+    }
+}

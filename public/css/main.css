@@ -248,7 +248,7 @@ input[type=submit] {
 .btn {
   font-size: 1.25rem;
   color: white !important;
-  font-weight: 500;
+  font-weight: 700;
   cursor: pointer;
   border: 0;
   background-color: #10788e;
@@ -262,7 +262,7 @@ input[type=submit] {
 }
 
 .btn-orange {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   color: white !important;
   font-weight: 700;
   cursor: pointer;
@@ -271,6 +271,10 @@ input[type=submit] {
   padding: 0.625rem 1.875rem;
   border-radius: 0.3125rem;
   transition: background-color 0.5s ease-in-out;
+}
+
+.btn-orange:hover {
+  background-color: hsl(39, 89%, 40%);
 }
 
 .btn2 {
@@ -300,7 +304,7 @@ input[type=submit] {
 }
 
 .green {
-  background-color: #10788e;
+  background-color: #136374;
 }
 
 .headline {
@@ -316,7 +320,7 @@ input[type=submit] {
   width: min(100%, 71.25rem);
 }
 .headline__grid p {
-  color: #00abb2;
+  color: #5e9400;
   font-weight: 500;
   font-size: 1.25rem;
   padding-top: 2.8125rem;
@@ -333,7 +337,7 @@ input[type=submit] {
   width: 3.125rem;
   height: 0.1875rem;
   bottom: -1.5625rem;
-  background: #00abb2;
+  background: #5e9400;
 }
 
 .mission-btn {
@@ -729,6 +733,7 @@ input[type=submit] {
 }
 
 .vid {
+  background-color: white;
   color: hsl(0, 0%, 100%);
 }
 .vid h3 {
@@ -756,6 +761,7 @@ input[type=submit] {
   }
 }
 .vid__grid {
+  background-color: #136374;
   display: grid;
   margin-inline: auto;
   align-items: center;
@@ -785,15 +791,19 @@ input[type=submit] {
 .donate img {
   width: 9.375rem;
 }
+.donate h3,
+.donate p {
+  color: white;
+}
 .donate h3 {
   font-size: 1.875rem;
-  color: #10788e;
 }
 .donate p {
   font-size: 1.25rem;
 }
 .donate__grid {
-  border-radius: 0 5rem 0 5rem;
+  background-color: #00abb2;
+  border-radius: 1.5rem;
   padding: 1.875rem 0;
   display: grid;
   margin-inline: auto;

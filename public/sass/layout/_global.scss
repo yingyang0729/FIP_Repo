@@ -7,7 +7,7 @@
 .btn {
     font-size: px(20);
     color: white !important;
-    font-weight: 500;
+    font-weight: 700;
     cursor: pointer;
     border: 0;
     background-color: $colour1;
@@ -22,7 +22,7 @@
 }
 
 .btn-orange {
-    font-size: px(20);
+    font-size: px(18);
     color: white !important;
     font-weight: 700;
     cursor: pointer;
@@ -32,6 +32,9 @@
     border-radius: px(5);
     transition: background-color 0.5s ease-in-out;
     // transition: color 300ms ease-in-out;
+}
+.btn-orange:hover {
+    background-color: hsl(39, 89%, 40%);
 }
 
 .btn2 {
@@ -61,7 +64,7 @@
 }
 
 .green {
-    background-color: $colour1;
+    background-color: $colour2;
 }
 .headline {
     text-align: center;
@@ -75,7 +78,7 @@
         width: min(100%, px(1140));
         // background-color: aqua;
         p {
-            color: $colour3;
+            color: $colourGreen;
             font-weight: 500;
             font-size: px(20);
             padding-top: px(45);
@@ -92,7 +95,7 @@
             width: px(50);
             height: px(3);
             bottom: px(-25);
-            background: $colour3;
+            background: $colourGreen;
         }
     }
 }
