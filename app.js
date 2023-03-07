@@ -29,6 +29,21 @@ app.get('/chat', (req, res) => {
     res.sendFile(__dirname + '/views/chat.html');
 });
 
+app.get('/firstlink', (req, res) => {
+    // this is pointing index.htmk --> shared page
+    res.sendFile(__dirname + '/views/firstlink.html');
+});
+
+app.get('/secondlink', (req, res) => {
+    // this is pointing index.htmk --> shared page
+    res.sendFile(__dirname + '/views/secondlink.html');
+});
+
+app.get('/thirdlink', (req, res) => {
+    // this is pointing index.htmk --> shared page
+    res.sendFile(__dirname + '/views/thirdlink.html');
+});
+
 server.listen(port, () => {
     console.log(`listening on ${port}`);
 });
